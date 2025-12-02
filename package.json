@@ -2,6 +2,7 @@
   "name": "senergy-dental-pixelperfect",
   "version": "1.0.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -19,5 +20,6 @@
     "vite": "^5.0.0"
   },
   "engines": {
-    "node": "22.x"}
+    "node": "22.x"
+  }
 }
