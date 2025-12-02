@@ -1,8 +1,8 @@
 import React, {useEffect, useRef, useState} from 'react';
 const items = [
-  {text:'Професійний підхід, робота в обіцяні терміни, точність максимальна.', author:'Данилевський С.'},
-  {text:'Найважливіше — якісна робота техніка. Дякую лабораторії Сергія!', author:'Гриник Р.'},
-  {text:'Thank you Serhiy! I am so grateful to have met you and found your fantastic dental lab.', author:'E. Bramley'}
+  {text:'Profesjonalne podejście, praca w ustalonych terminach, maksymalna dokładność.', author:'Danilevsky S.'},
+  {text:'Najważniejsza jest jakość pracy technika. Dziękujemy laboratorium!', author:'Hrynik R.'},
+  {text:'Dziękuję! Jestem bardzo wdzięczny, że Cię poznałem i znalazłem Twoje fantastyczne laboratorium dentystyczne.', author:'E. Bramley'}
 ];
 export default function Testimonials(){
   const [i,setI]=useState(0);
@@ -16,7 +16,7 @@ export default function Testimonials(){
   },[i]);
   return (
     <section className="section container testimonials">
-      <h2>Відгуки</h2>
+      <h2>Recenzje</h2>
       <div style={{overflow:'hidden'}}>
         <div className="slider" ref={slider}>
           {items.map((it,idx)=>(

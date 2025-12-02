@@ -5,13 +5,13 @@ export default function About(){
       <h2>Про нас</h2>
       <div className="about-inner">
         <div>
-          <h3>Сергій Грибовський — Засновник</h3>
-          <p>Зубний технік, засновник лабораторії. Досвід та авторські підходи.</p>
+          <h3>Dasha Saiko — założycielka</h3>
+          <p>Technik dentystyczny, założyciel laboratorium. Doświadczenie i oryginalne podejście.</p>
         </div>
         <div className="stats">
-          <div><strong>12</strong><div>майстрів</div></div>
-          <div><strong>6</strong><div>країн</div></div>
-          <div><strong>10 000</strong><div>робіт</div></div>
+          <div><strong>2</strong><div>panów</div></div>
+          <div><strong>6</strong><div>kraje</div></div>
+          <div><strong>100</strong><div>prac</div></div>
         </div>
       </div>
     </section>

@@ -1,16 +1,16 @@
 import React from 'react';
 export default function Services(){
   const items = [
-    {title:'Дизайн моделювання', desc:'CAD/CAM дизайн, цифрове моделювання.'},
-    {title:'Тимчасові конструкції', desc:'Надійні тимчасові рішення.'},
-    {title:'Безметалеві коронки', desc:'Діоксид цирконію, дисилікат літію.'},
-    {title:'Постійні конструкції', desc:'Якісні реставрації та гарантія.'},
-    {title:'Імплантні рішення', desc:'All-in-4 та інші протоколи.'},
-    {title:'Реставрації', desc:'Вініри та кераміка на вогнетривкій масі.'}
+    {title:'Symulacja projektu', desc:'Projektowanie CAD/CAM, modelowanie cyfrowe.'},
+    {title:'Konstrukcje tymczasowe', desc:'Niezawodne rozwiązania tymczasowe.'},
+    {title:'Korony bezmetalowe', desc:'Dwutlenek cyrkonu, dwukrzemian litu.'},
+    {title:'Konstrukcje stałe', desc:'Wysoka jakość renowacji i gwarancja.'},
+    {title:'Rozwiązania implantologiczne', desc:'Protokoły All-in-4 i inne.'},
+    {title:'Renowacje', desc:'Вініри та кераміка на вогнетривкій масі.'}
   ];
   return (
     <section id="services" className="section services container">
-      <h2>Послуги</h2>
+      <h2>Usługi</h2>
       <div className="grid">
         {items.map((it,i)=>(
           <article className="card" key={i}>

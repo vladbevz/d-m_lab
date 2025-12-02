@@ -1,7 +1,9 @@
 import React, {useEffect, useRef} from 'react';
-import hero from '../assets/images/hero-placeholder.jpg';
+import heroImg from '../assets/images/hero-placeholder.webp';
+
 export default function Hero(){
   const ref = useRef();
+
   useEffect(()=>{
     const el = ref.current;
     const io = new IntersectionObserver(entries=>{
@@ -12,15 +14,15 @@ export default function Hero(){
     if(el) io.observe(el);
     return ()=> io.disconnect();
   },[]);
+
   return (
-    <section className="hero container">
-      <div className="hero-inner" ref={ref}>
-        <h1>Сучасна цифрова зуботехнічна лабораторія</h1>
-        <p>Професійний підхід, робота в обіцяні терміни, точність максимальна.</p>
-        <a className="btn" href="#contact">Передзвоніть мені</a>
-      </div>
-      <div className="hero-image">
-        <img src={hero} alt="Лабораторія" />
+    <section className="hero">
+      <div className="hero-bg" style={{ backgroundImage: `url(${heroImg})` }}></div>
+
+      <div className="container hero-inner" ref={ref}>
+        <h1>Nowoczesne cyfrowe laboratorium stomatologiczne</h1>
+        <p>Profesjonalne podejście, praca w ustalonych terminach, maksymalna dokładność.</p>
+        <a className="btn" href="#contact">Skontaktuj się z nami</a>
       </div>
     </section>
   );
