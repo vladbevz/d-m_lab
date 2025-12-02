@@ -2,7 +2,7 @@ import React from 'react';
 export default function About(){
   return (
     <section id="about" className="section about container">
-      <h2>Про нас</h2>
+      <h2>O nas</h2>
       <div className="about-inner">
         <div>
           <h3>Dasha Saiko — założycielka</h3>
