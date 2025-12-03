@@ -4,9 +4,12 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "dev": "vite",
     "build": "node_modules/.bin/vite build"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
+    "framer-motion": "^12.23.25",
     "lucide": "^0.555.0",
     "lucide-react": "^0.555.0",
     "react": "^18.2.0",
