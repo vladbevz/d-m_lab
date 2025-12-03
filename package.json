@@ -4,8 +4,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "npx vite",
-    "build": "npx vite build",
+    "preinstall": "npm config set scripts-prepend-node-path false",
+    "dev": "node -e \"console.log('Dev server starting...')\" && npx vite",
+    "build": "rm -f node_modules/.bin/vite 2>/dev/null || true && npx vite build",
     "preview": "npx vite preview"
   },
   "dependencies": {
